@@ -57,5 +57,5 @@ if __name__ == '__main__':
 ![table1](examples/table_1.png)
 
 ## LICENSE
-MIT  
+[MIT](LICENSE.txt)  
 Copyright (c) 2020 HiroshiARAKI All Rights Reserved.
