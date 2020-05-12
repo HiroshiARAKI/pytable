@@ -1,5 +1,5 @@
 """
-pTable
+pyTable
 -- A wrapped useful and tiny library to plot Table worked on MatplotLib.
 
 Copyright (c) 2020 HiroshiARAKI All Rights Reserved.

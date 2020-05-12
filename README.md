@@ -15,7 +15,7 @@ $ python setup.py install
 ### Example / [table_0.py](examples/table_0.py)
 You can plot a table easily by giving data as a dict object as below.
 ```python
-import ptable as pt
+import pytab as pt
 
 
 if __name__ == '__main__':
@@ -34,7 +34,7 @@ if __name__ == '__main__':
 ### Example / [table_1.py](examples/table_1.py)
 And, you can design a table easily.
 ```python
-import ptable as pt
+import pytab as pt
 
 
 if __name__ == '__main__':

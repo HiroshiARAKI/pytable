@@ -1,4 +1,4 @@
-import ptable as pt
+import pytab as pt
 
 
 if __name__ == '__main__':

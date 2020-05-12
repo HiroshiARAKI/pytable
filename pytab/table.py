@@ -37,7 +37,24 @@ def table(data: Dict,
           table_type: str = None,
           **kwargs
           ) -> Table:
+    """
+    Create Table
+    -------------
 
+    :param data:        table column data as dict
+    :param data_loc:    data align {'left', 'center', 'right'}
+    :param rows:        row data as list
+    :param figsize:     table figsize as Tuple
+    :param th_c:        Table header's background-color - you can use colorcodes and matplotlib's color names
+    :param th_loc:      Table header align {'left', 'center', 'right'}
+    :param td_c:        Table data's (rows') background-color - you can use colorcodes and matplotlib's color names
+    :param td_loc:      Table data's (rows') align {'left', 'center', 'right'}
+    :param edge:        Table edges {'open', 'closed', 'horizontal', 'vertical'}
+    :param table_type:  Table types e.g. 'striped'
+    :param kwargs:
+
+    :return: matplotlib.table.Table object
+    """
     df = pd.DataFrame(data)
 
     edge = 'closed' if edge not in edges else edge
@@ -86,16 +103,30 @@ def table(data: Dict,
 
 
 def show():
+    """
+    show table
+    :return:
+    """
     plt.show()
     plt.close()
 
 
 def save(filename, dpi=150):
+    """
+    save table
+    :param filename:
+    :param dpi:
+    :return:
+    """
     plt.savefig(filename, dpi=dpi)
     plt.close()
 
 
 def show_colors():
+    """
+    show color name codes
+    :return:
+    """
     nums = len(colors)
     print('# of colors variation: {}'.format(nums))
     for c in mc.BASE_COLORS:
