@@ -14,6 +14,8 @@ from .table import (
     show,
     save,
     show_colors,
+    change_th_design,
+    change_th_colors,
 )
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'

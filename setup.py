@@ -37,7 +37,11 @@ setup(
     description='pTable is the library to plot table easily!',
     long_description=readme,
     packages=find_packages(),
-    install_requires=_requires_from_file('requirements.txt'),
+    install_requires=[
+        'matplotlib>=3.1.2',
+        'pandas>=1.0.3',
+        'numpy',
+    ],
     license='MIT',
     classifiers=[
         'Programming Language :: Python :: 3',
