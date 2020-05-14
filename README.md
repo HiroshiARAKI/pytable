@@ -56,6 +56,10 @@ if __name__ == '__main__':
 ```
 ![table1](examples/table_1.png)
 
+## Documentation
+[en] [pyTable Documentation](https://hirlab.net/nblog/category/programming/art_880/)  
+[jp] [pyTable ドキュメント](https://hirlab.net/nblog/category/programming/art_845/)  
+
 ## LICENSE
 [MIT](LICENSE.txt)  
 Copyright (c) 2020 HiroshiARAKI All Rights Reserved.

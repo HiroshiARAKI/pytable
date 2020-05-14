@@ -72,6 +72,11 @@ And, you can design a table easily.
 
    table1
 
+Documentation
+-----------
+[en] `pyTable Documentation <https://hirlab.net/nblog/category/programming/art_880/>`
+[jp] `pyTable ドキュメント <https://hirlab.net/nblog/category/programming/art_845/>`
+
 LICENSE
 -------
 
