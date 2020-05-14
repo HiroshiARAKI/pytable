@@ -74,8 +74,8 @@ And, you can design a table easily.
 
 Documentation
 -----------
-[en] `pyTable Documentation <https://hirlab.net/nblog/category/programming/art_880/>`
-[jp] `pyTable ドキュメント <https://hirlab.net/nblog/category/programming/art_845/>`
+[en] `pyTable Documentation <https://hirlab.net/nblog/category/programming/art_880/>`__
+[jp] `pyTable ドキュメント <https://hirlab.net/nblog/category/programming/art_845/>`__
 
 LICENSE
 -------
