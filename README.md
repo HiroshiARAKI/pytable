@@ -1,5 +1,5 @@
 # pyTable
-![version](https://img.shields.io/badge/version-1.0.1-blue.svg?style=flat) 
+![version](https://img.shields.io/badge/version-1.0.3-blue.svg?style=flat) 
 ![Python](https://img.shields.io/badge/Python->=3.5-a0f.svg?style=flat) 
 ![matplotlib](https://img.shields.io/badge/matplotlib->=3.1.2-2af.svg?style=flat) 
 

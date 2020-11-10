@@ -94,6 +94,14 @@ def table(data: Dict,
 
     :return: matplotlib.table.Table object
     """
+
+    if isinstance(data, pd.DataFrame):
+        data = data.to_dict()
+        data = {
+            k: [val for val in data[k].values()]
+            for k in data
+        }
+
     df = pd.DataFrame(data)
 
     edge = 'closed' if edge not in edges else edge

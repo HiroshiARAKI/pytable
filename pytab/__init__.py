@@ -18,4 +18,4 @@ from .table import (
     change_th_colors,
 )
 
-__version__ = '1.0.1b'
+__version__ = '1.0.3'
