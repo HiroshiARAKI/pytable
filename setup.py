@@ -34,7 +34,7 @@ setup(
     author_email='araki@hirlab.net',
     maintainer='Hiroshi ARAKI',
     maintainer_email='araki@hirlab.net',
-    description='pTable is the library to plot table easily!',
+    description='pyTable is the library to plot table easily!',
     long_description=readme,
     packages=find_packages(),
     install_requires=[

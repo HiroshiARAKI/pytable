@@ -14,7 +14,7 @@ import matplotlib.colors as mc
 from matplotlib.table import Table
 import pandas as pd
 import numpy as np
-from typing import Dict, List, TypeVar, Tuple
+from typing import Dict, List, TypeVar, Tuple, Union
 import re
 
 T = TypeVar('T', int, float, str)
@@ -58,7 +58,7 @@ colors.update(mc.CSS4_COLORS)
 colors.update(mc.XKCD_COLORS)
 
 
-def table(data: Dict,
+def table(data: Union[Dict, pd.DataFrame],
           data_loc: str = 'right',
           rows: List[T] = None,
           figsize: Tuple[float, float] = (3, 3),
@@ -71,13 +71,14 @@ def table(data: Dict,
           th_type: str = None,
           th_face: str = None,
           th_text: str = None,
+          fontsize: int = None,
           **kwargs
           ) -> Table:
     """
     Create Table
     -------------
 
-    :param data:        table column data as dict
+    :param data:        table column data as dict or pandas.DataFrame
     :param data_loc:    data align {'left', 'center', 'right'}
     :param rows:        row data as list
     :param figsize:     table figsize as Tuple
@@ -90,6 +91,7 @@ def table(data: Dict,
     :param th_type:     Table header type
     :param th_face:
     :param th_text:
+    :param fontsize:
     :param kwargs:
 
     :return: matplotlib.table.Table object
@@ -148,6 +150,9 @@ def table(data: Dict,
 
     change_th_design(tb, th_type, len(data))
     change_th_colors(tb, th_face, th_text, len(data))
+
+    if fontsize is not None and isinstance(fontsize, int):
+        tb.set_fontsize(fontsize)
 
     return tb
 
